@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400&display=swap');
+
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.ttf) format(truetype);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'lobster';
+    src: url(../fontes/Lobster-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Phudu';
+    src: url(../fontes/phudu.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #bef6aa;
+    --cor1: #77c861;
+    --cor2: #6fe84e;
+    --cor3: #25b700;
+    --cor4: #3cea11;
+    --cor5: #1d8f00;
+    --cor6: #136100;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-de-destaque: 'lobster', Arial;
+    --fonte-titulo: 'phudu', Arial;
+    --font-android: 'idroid';
+
+    --tamanho: 'padding: 20px;'
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: lightcyan;
+    font-family: var(--fonte-padrão);
+    margin: auto;
+    display: block;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor6));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+header  h1 {
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    min-width: 20px;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.396);
+}
+
+header  p {
+    font-family: var(--fonte-padrão);
+    color: white;
+    font-size: 1.2em;
+    padding-top: 20px;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.396);
+
+}
+
+.div-main {
+    display: flex;
+    align-items: center;
+}
+
+.div1 {
+    
+}
+
+ul {
+    list-style: none;
+    margin: auto;
+    padding-left: 0;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+li {
+    
+}
+
+.div2 {
+    
+}
+
+nav {
+    text-align: center;
+    background-color: var(--cor6);
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.423);
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    transition-duration: 0.3s;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.362);
+}
+
+nav > a:active {
+    transform: scale(0.95);
+}
+
+
+
+main {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.178);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.img-android-pq {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
+main .video-android {
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+main h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+}
+
+main h2 {
+    font-family: var(--fonte-titulo);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    border-radius: 10px;
+    padding: 0px 10px;    
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px;
+    margin-bottom: 30px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: var(--cor4);
+    background-color: var(--cor0);
+    border-radius: 8px;
+    padding: 2px 5px;
+}
+
+main a {
+    color: var(--cor6);
+    background-color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: black;
+    padding-top: 5px;
+}
+
+main h3 {
+    font-family: var(--fonte-titulo);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    border-radius: 10px;
+    padding: 0px 10px; 
+}
+
+footer {
+    background-color: var(--cor3);
+    text-align: center;
+    padding: 10px;
+}
