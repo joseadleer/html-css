@@ -83,10 +83,6 @@ header  p {
     align-items: center;
 }
 
-.div1 {
-    
-}
-
 ul {
     list-style: none;
     margin: auto;
@@ -95,14 +91,6 @@ ul {
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
-}
-
-li {
-    
-}
-
-.div2 {
-    
 }
 
 nav {
