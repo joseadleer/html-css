@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(24, 24, 24);
+    text-decoration: dashed;
+}
+
+h1 {
+    color: aliceblue;
+    background-color: #e31b1b;
+}
+
+h2 {
+    color: rgb(10, 243, 255);
+}
+
+p{
+    color: aliceblue
+}

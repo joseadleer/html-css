@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+    }
+    header {
+        background-color: white;
+        padding: 10px 10px 10px 20px;
+        margin: 0px auto 0px auto;
+    }
+
+    nav {
+        background-color: gray;
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.445);
+    }
+
+    nav > a {
+        text-decoration: none;
+        margin-right: 50px;
+    }
+
+    header > nav > a:hover {
+        color: brown;
+        background-color: aqua;
+    }
+
+    main {
+        width: auto;
+        background-color: aliceblue;
+    }
+
+    article {
+        background-color: aliceblue;
+    }
+
+    article > h2{
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    article > p {
+        background-color: gray;
+        text-align: justify;
+        margin: 0px 10px 20px 10px;
+        padding: 10px;
+    }
+
+    article > aside {
+        background-color: gray;
+        margin: 0px 10px 0px 10px;
+        padding: 5px;
+    }
+
+
+    footer {
+        width: auto;
+        height: auto;
+        background-color: aliceblue;
+        margin: 10px;
+        padding: 1px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+        </section>
+        <section>
+            <article>
+                <h2>Noticia sobre o Brasil.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime rem harum consequatur magnam deleniti ex inventore voluptatem eius quaerat sequi perferendis nemo consectetur voluptates, quae distinctio mollitia quidem qui!</p>
+                <aside>
+                    Artigo escrito por HTML5
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por José Ricardo Adler</p>
+    </footer>
+</body>
+</html>
