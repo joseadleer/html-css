@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Criação de formulário</h1>
     </header>
     <main>
-        <form action="" autocomplete="off">
-            <p>Nome: 
-                <input type="text" name="nome" id="nome"></p>
-            <p>Sobrenome: 
-                <input type="text" name="sobrenome" id="sobrenome"></p>
-            <p>Telefone: 
-                <input type="text" name="telefone" id="telefone"></p>
-            <p>Email: 
-                <input type="text" name="email" id="email"></p>
-            <p><input type="submit" value="Enviar"></p>
-        </form>
+        <div>
+            <form action="cadastro.php" method="post" autocomplete="off">
+                <p><label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome"></p>
+                <p><label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome"></p>
+                <p><label for="itelefone">Telefone:</label>
+                    <input type="text" name="telefone" id="itelefone"></p>
+                <p><label for="iemail">Email:</label>
+                    <input type="text" name="email" id="iemail"></p>
+                <p><input type="submit" value="Enviar"></p>
+            </form>
+        </div>
     </main>
 </body>
 </html>
