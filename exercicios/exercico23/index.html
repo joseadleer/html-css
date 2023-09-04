@@ -12,18 +12,22 @@
     </header>
     <main>
         <div>
-            <form action="cadastro.php" method="post" autocomplete="on">
-                <p><label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome" required minlength="3" maxlength="15" size="15" placeholder="Nome do Usuário" autocomplete="username"></p>
-                <p><label for="isobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="isobrenome" required minlength="3" maxlength="15" size="15" placeholder="Sobrenome do Usuário"></p>
-                <p><label for="itelefone">Telefone:</label>
-                    <input type="text" name="telefone" id="itelefone" required minlength="11" maxlength="12" size="15" placeholder="Telefone do Usuário" autocomplete="cc-number"></p>
-                <p><label for="iemail">Email:</label>
-                    <input type="text" name="email" id="iemail" required size="15" placeholder="Email do Usuário" autocomplete="email"></p>
-                <p><input type="submit" value="Enviar">
-                <input type="reset" value="Limpar"></p>
-            </form>
+            <fieldset>
+                <legend>Dados</legend>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <p><label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" required minlength="3" maxlength="30" size="15" placeholder="Nome do Usuário" autocomplete="username"></p>
+                    <p><label for="isobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="isobrenome" required minlength="3" maxlength="15" size="15" placeholder="Sobrenome do Usuário"></p>
+                    <p><label for="itel">Telefone:</label>
+                        <input type="tel" name="telefone" id="itel" required minlength="11" maxlength="12" size="15" placeholder="Telefone do Usuário" autocomplete="tel" pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$" requi></p>
+                        <!-- estudar mais RegEx -->
+                    <p><label for="iemail">Email:</label>
+                        <input type="email" name="email" id="iemail" required size="15" placeholder="Email do Usuário" autocomplete="email"></p>
+                    <p><input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar"></p>
+                </form>
+            </fieldset>
         </div>
     </main>
 </body>
